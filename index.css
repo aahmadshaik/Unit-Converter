@@ -1,0 +1,134 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background: #f4f4f4;
+}
+
+/* 📌 Input Container */
+.inputContainer {
+  height: 285px;
+  width: 100%;
+  background-color: #6943ff;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.inputContainer h1 {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+/* 📌 Input Field */
+.inputField {
+  width: 80px;
+  height: 60px;
+  background-color: #6943ff;
+  border-radius: 5px;
+  border: 2px solid #b295ff;
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* 📌 Convert Button */
+.convertButton {
+  background: #ffffff;
+  color: black;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 📌 Conversion Container */
+.conversionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 📌 Box (Responsive Card) */
+.box {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  background: #ffffff;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* 📌 Headings in Boxes */
+.box h1 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #5a537b;
+}
+
+/* 📌 Result Text */
+.box .result {
+  font-weight: 400;
+  font-size: 14px;
+  color: #353535;
+}
+
+/* 📌 🌍 Mobile Responsiveness */
+@media (max-width: 480px) {
+  .inputContainer {
+    height: auto;
+    width: 100%;
+    /* padding: 15px; */
+    row-gap: 20px;
+  }
+
+  .inputContainer h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .inputField {
+    width: 70px;
+    height: 50px;
+    font-size: 28px;
+  }
+
+  .convertButton {
+    width: 90px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .box {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .box h1 {
+    font-size: 16px;
+  }
+
+  .box .result {
+    font-size: 12px;
+  }
+}
